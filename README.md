@@ -8,11 +8,9 @@
 
 ## 📸 Demo (ตัวอย่างการใช้งาน)
 
-*(นำรูป Screenshot ของหน้าจอแอปของคุณมาใส่แทนที่ลิงก์ด้านล่างนี้ได้เลยครับ เพื่อให้หน้า GitHub ดูสมบูรณ์ที่สุด)*
-
-| สร้างกลุ่มและเพิ่มเพื่อน 👥 | แบ่งงานตามความยาก ⚖️ |
-| :---: | :---: |
-| <img src="https://placehold.co/600x400/1e1e2e/a5b4fc?text=Workspace+Setup" alt="Workspace Setup" width="100%" /> | <img src="https://placehold.co/600x400/1e1e2e/a5b4fc?text=Task+Allocation" alt="Task Allocation" width="100%" /> |
+<div align="center">
+  <img src="public/demo.png" alt="FairShare Demo" width="100%" />
+</div>
 
 ## ✨ Features (จุดเด่น)
 
