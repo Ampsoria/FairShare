@@ -4,6 +4,11 @@
 
 <div align="center">
   <img src="public/favicon.svg" alt="FairShare Logo" width="120" />
+  <br/>
+  <br/>
+  <a href="https://ampsoria.github.io/FairShare/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Try_Live_Demo-6366f1?style=for-the-badge&logoColor=white" alt="Live Demo" />
+  </a>
 </div>
 
 ## 📸 Demo (ตัวอย่างการใช้งาน)
