@@ -1,71 +1,81 @@
-# FairShare 🤝
+# FairShare 🤝✨
 
-**FairShare** is a modern, offline-first web application designed to help university students and teams divide group tasks fairly and efficiently. Forget the hassle of manual delegation—FairShare uses a smart algorithm to balance the workload based on task effort scores, ensuring everyone contributes equally.
+**FairShare** is a modern, offline-first web application designed to help university students and teams divide group tasks fairly and efficiently. Forget the hassle of manual delegation—FairShare uses a smart algorithm to balance the workload based on task effort scores, ensuring everyone contributes equally. 🎓💼
 
-![FairShare Banner](public/favicon.svg) <!-- You can replace this with an actual screenshot -->
+<div align="center">
+  <img src="public/favicon.svg" alt="FairShare Logo" width="120" />
+</div>
 
-## ✨ Features
+## 📸 Demo (ตัวอย่างการใช้งาน)
 
-- **Project Workspaces:** Create dedicated workspaces for different subjects, group projects, or assignments.
-- **Member Management:** Easily add team members to your workspace.
-- **Smart Task Assignment:** Add tasks with customizable "Effort Scores" (1-5), deadlines, and recurrence. Our algorithm automatically assigns tasks to members to balance the overall workload.
-- **Offline First:** Built with `Zustand` and `localStorage`, the app works 100% offline. No database connection required. Your data stays securely on your device.
-- **Premium Modern UI:** Enjoy a beautiful, highly responsive interface featuring Glassmorphism, animated Aurora backgrounds, and micro-interactions powered by Framer Motion.
+*(นำรูป Screenshot ของหน้าจอแอปของคุณมาใส่แทนที่ลิงก์ด้านล่างนี้ได้เลยครับ เพื่อให้หน้า GitHub ดูสมบูรณ์ที่สุด)*
 
-## 🛠 Tech Stack
+| สร้างกลุ่มและเพิ่มเพื่อน 👥 | แบ่งงานตามความยาก ⚖️ |
+| :---: | :---: |
+| <img src="https://placehold.co/600x400/1e1e2e/a5b4fc?text=Workspace+Setup" alt="Workspace Setup" width="100%" /> | <img src="https://placehold.co/600x400/1e1e2e/a5b4fc?text=Task+Allocation" alt="Task Allocation" width="100%" /> |
 
-- **Framework:** React 18
-- **Language:** TypeScript
-- **Bundler:** Vite
-- **Styling:** Tailwind CSS + Vanilla CSS (Custom Design System)
-- **State Management:** Zustand (with Persist Middleware)
-- **Animations:** Motion (Framer Motion)
-- **Icons:** Lucide React
+## ✨ Features (จุดเด่น)
 
-## 🚀 Getting Started
+- 🏢 **Project Workspaces:** Create dedicated workspaces for different subjects, group projects, or assignments.
+- 👥 **Member Management:** Easily add team members to your workspace with beautiful avatars.
+- 🧠 **Smart Task Assignment:** Add tasks with customizable "Effort Scores" (1-5), deadlines, and recurrence. Our algorithm automatically assigns tasks to members to balance the overall workload.
+- 📴 **Offline First:** Built with `Zustand` and `localStorage`, the app works 100% offline. No database connection required. Your data stays securely on your device.
+- 🎨 **Premium Modern UI:** Enjoy a beautiful, highly responsive interface featuring Glassmorphism, animated Aurora backgrounds, and micro-interactions powered by Framer Motion.
+
+## 🛠 Tech Stack (เทคโนโลยีที่ใช้)
+
+- **Framework:** React 18 ⚛️
+- **Language:** TypeScript 📘
+- **Bundler:** Vite ⚡
+- **Styling:** Tailwind CSS + Vanilla CSS (Custom Design System) 💅
+- **State Management:** Zustand (with Persist Middleware) 🐻
+- **Animations:** Motion (Framer Motion) 🎬
+- **Icons:** Lucide React 🔶
+
+## 🚀 Getting Started (วิธีติดตั้งและใช้งาน)
 
 To get a local copy up and running, follow these simple steps:
 
-### Prerequisites
+### 📋 Prerequisites
 
-Make sure you have Node.js installed on your machine.
+Make sure you have Node.js installed on your machine. 📦
 
-### Installation
+### 💻 Installation
 
-1. Clone the repository (or download the source code):
+1. **Clone the repository** (or download the source code):
    ```bash
    git clone https://github.com/yourusername/FairShare.git
    ```
-2. Navigate into the project directory:
+2. **Navigate into the project directory**:
    ```bash
    cd FairShare
    ```
-3. Install the dependencies:
+3. **Install the dependencies**:
    ```bash
    npm install
    ```
-4. Start the development server:
+4. **Start the development server**:
    ```bash
    npm run dev
    ```
-5. Open your browser and visit `http://localhost:5173/` to use the app!
+5. **Open your browser** and visit `http://localhost:5173/` to use the app! 🌐
 
-## 💡 How it works (Algorithm)
+## 💡 How it works (Algorithm) ⚙️
 
-FairShare uses a greedy algorithm approach to balance tasks. 
-1. Tasks are sorted by their **Effort Score** (highest to lowest).
-2. The algorithm iterates through the tasks and assigns each task to the member who currently has the **lowest total effort score**.
-3. This ensures that no single member is overloaded with heavy tasks while others do the light ones.
+FairShare uses a greedy algorithm approach to balance tasks:
+1. 📝 Tasks are sorted by their **Effort Score** (highest to lowest).
+2. 🔄 The algorithm iterates through the tasks and assigns each task to the member who currently has the **lowest total effort score**.
+3. ⚖️ This ensures that no single member is overloaded with heavy tasks while others do the light ones.
 
-## 📱 Future Roadmap
+## 📱 Future Roadmap 🗺️
 
-- Real-time collaboration via Firebase (Integration is pre-structured in `src/firebase/`).
-- Export task assignments as PDF or image.
-- Task completion tracking and progress bars (Already partially implemented!).
+- 🌐 Real-time collaboration via Firebase (Integration is pre-structured in `src/firebase/`).
+- 📄 Export task assignments as PDF or image.
+- ✅ Task completion tracking and progress bars (Already partially implemented!).
 
-## 📄 License
+## 📄 License 📜
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE). 🔓
 
 ---
-*Designed and built with ❤️ to end group work disputes.*
+*Designed and built with ❤️ to end group work disputes.* ✨
