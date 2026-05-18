@@ -42,7 +42,7 @@ Make sure you have Node.js installed on your machine. 📦
 
 1. **Clone the repository** (or download the source code):
    ```bash
-   git clone https://github.com/yourusername/FairShare.git
+   git clone https://github.com/Ampsoria/FairShare.git
    ```
 2. **Navigate into the project directory**:
    ```bash
