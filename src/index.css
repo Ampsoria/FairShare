@@ -53,6 +53,10 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+  /* Typography improvements for Thai language */
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  word-break: break-word;
   /* Prevent double-tap zoom on buttons */
   touch-action: manipulation;
 }
@@ -267,7 +271,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .modern-input::placeholder {
-  color: rgba(var(--fg), 0.35);
+  color: rgba(var(--fg), 0.5);
 }
 
 :root[data-theme="light"] .modern-input {
@@ -291,7 +295,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: rgba(var(--fg), 0.02);
   border: 1px solid rgba(var(--fg), 0.08);
   border-radius: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 
@@ -301,6 +305,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .modern-card {
+    padding: 1.5rem;
+  }
 }
 
 .modern-card:hover {

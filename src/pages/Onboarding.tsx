@@ -65,8 +65,8 @@ export default function Onboarding() {
                   เลือกบัญชีของคุณ
                 </h2>
                 <p
-                  className="text-xs font-light mt-0.5"
-                  style={{ color: 'rgba(var(--fg),0.5)' }}
+                  className="text-xs font-light mt-2 leading-relaxed"
+                  style={{ color: 'rgba(var(--fg),0.7)' }}
                 >
                   หรือเพิ่มบัญชีใหม่
                 </p>
@@ -163,14 +163,14 @@ export default function Onboarding() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h2
-                    className="text-base font-bold leading-tight"
+                    className="text-base font-bold"
                     style={{ color: 'rgba(var(--fg),0.95)' }}
                   >
                     สร้างบัญชีใหม่
                   </h2>
                   <p
-                    className="text-xs font-light leading-tight mt-0.5"
-                    style={{ color: 'rgba(var(--fg),0.55)' }}
+                    className="text-xs font-light mt-2 leading-relaxed"
+                    style={{ color: 'rgba(var(--fg),0.7)' }}
                   >
                     บอกชื่อก่อนเริ่มใช้งาน
                   </p>
@@ -191,8 +191,8 @@ export default function Onboarding() {
               </div>
 
               {/* Input */}
-              <div className="space-y-1 mt-4">
-                <label className="modern-label">
+              <div className="space-y-3 mt-6 mb-8">
+                <label className="modern-label text-sm leading-relaxed">
                   ชื่อของคุณ
                 </label>
                 <input
@@ -205,8 +205,8 @@ export default function Onboarding() {
                   className="modern-input"
                 />
                 <p
-                  className="text-xs font-light leading-snug px-1"
-                  style={{ color: 'rgba(var(--fg),0.45)' }}
+                  className="text-xs font-light px-1 mt-4 leading-relaxed"
+                  style={{ color: 'rgba(var(--fg),0.6)' }}
                 >
                   คุณจะถูกเพิ่มเป็นสมาชิกในทุกกลุ่มที่สร้างโดยอัตโนมัติ
                 </p>
@@ -222,13 +222,14 @@ export default function Onboarding() {
                     : {}
                 }
                 whileTap={name.trim() ? { scale: 0.98 } : {}}
-                className="w-full flex items-center justify-center gap-2 px-4 py-4 text-white rounded-2xl font-semibold transition text-sm"
+                className="w-full flex items-center justify-center gap-2 px-4 py-4 rounded-2xl font-semibold transition text-sm"
                 style={{
                   background: name.trim()
                     ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef)'
-                    : 'rgba(var(--fg),0.08)',
-                  boxShadow: name.trim() ? '0 8px 24px rgba(99,102,241,0.4)' : 'none',
-                  opacity: name.trim() ? 1 : 0.5,
+                    : 'rgba(var(--fg),0.06)',
+                  boxShadow: name.trim() ? '0 8px 24px rgba(99,102,241,0.4)' : 'inset 0 2px 4px rgba(0,0,0,0.05)',
+                  color: name.trim() ? '#ffffff' : 'rgba(var(--fg),0.45)',
+                  border: name.trim() ? '1px solid transparent' : '1px solid rgba(var(--fg),0.18)',
                   cursor: name.trim() ? 'pointer' : 'not-allowed',
                 }}
               >

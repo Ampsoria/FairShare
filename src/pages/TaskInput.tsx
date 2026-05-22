@@ -106,7 +106,7 @@ export default function TaskInput() {
             <h2 className="text-xl font-bold" style={{ color: 'rgba(var(--fg),0.95)' }}>
               เพิ่มงานในโปรเจกต์
             </h2>
-            <p className="text-sm mt-1 font-light" style={{ color: 'rgba(var(--fg),0.5)' }}>
+            <p className="text-sm mt-1 font-light" style={{ color: 'rgba(var(--fg),0.7)' }}>
               กำหนดระดับความยากของแต่ละงาน
             </p>
           </div>
@@ -155,7 +155,7 @@ export default function TaskInput() {
                 </motion.button>
               ))}
             </div>
-            <div className="flex justify-between text-xs font-light" style={{ color: 'rgba(var(--fg),0.35)' }}>
+            <div className="flex justify-between text-xs font-light mt-1" style={{ color: 'rgba(var(--fg),0.6)' }}>
               <span>ง่าย</span>
               <span>หนักมาก</span>
             </div>
@@ -201,12 +201,15 @@ export default function TaskInput() {
             disabled={!name.trim()}
             whileHover={name.trim() ? { y: -2, boxShadow: '0 8px 24px rgba(20, 184, 166, 0.4)' } : {}}
             whileTap={name.trim() ? { scale: 0.98 } : {}}
-            className="w-full flex items-center justify-center gap-2 px-4 py-3.5 text-white rounded-2xl font-semibold disabled:opacity-30 disabled:cursor-not-allowed transition text-sm"
+            className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl font-semibold transition text-sm"
             style={{
               background: name.trim()
                 ? 'linear-gradient(135deg, #14b8a6, #06b6d4)'
-                : 'rgba(var(--fg),0.08)',
-              boxShadow: name.trim() ? '0 4px 16px rgba(20, 184, 166, 0.3)' : 'none',
+                : 'rgba(var(--fg),0.06)',
+              boxShadow: name.trim() ? '0 4px 16px rgba(20, 184, 166, 0.3)' : 'inset 0 2px 4px rgba(0,0,0,0.05)',
+              color: name.trim() ? '#ffffff' : 'rgba(var(--fg),0.45)',
+              border: name.trim() ? '1px solid transparent' : '1px solid rgba(var(--fg),0.18)',
+              cursor: name.trim() ? 'pointer' : 'not-allowed',
             }}
           >
             <Plus size={16} />
@@ -226,13 +229,13 @@ export default function TaskInput() {
               <div className="flex items-center justify-between">
                 <h3
                   className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: 'rgba(var(--fg),0.65)' }}
+                  style={{ color: 'rgba(var(--fg),0.8)' }}
                 >
                   งานทั้งหมด ({tasks.length})
                 </h3>
                 <span
                   className="text-xs font-light tabular-nums"
-                  style={{ color: 'rgba(var(--fg),0.45)' }}
+                  style={{ color: 'rgba(var(--fg),0.65)' }}
                 >
                   รวม {totalScore} คะแนน
                 </span>
@@ -317,13 +320,16 @@ export default function TaskInput() {
           disabled={tasks.length === 0}
           whileHover={tasks.length > 0 ? { y: -2, boxShadow: '0 12px 32px rgba(99,102,241,0.45)' } : {}}
           whileTap={tasks.length > 0 ? { scale: 0.98 } : {}}
-          className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-4 text-white rounded-2xl font-semibold disabled:opacity-30 disabled:cursor-not-allowed transition text-sm"
+          className="mt-4 w-full flex items-center justify-center gap-2 px-4 py-4 rounded-2xl font-semibold transition text-sm"
           style={{
             background:
               tasks.length > 0
                 ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef)'
-                : 'rgba(var(--fg),0.08)',
-            boxShadow: tasks.length > 0 ? '0 8px 24px rgba(99,102,241,0.35)' : 'none',
+                : 'rgba(var(--fg),0.06)',
+            boxShadow: tasks.length > 0 ? '0 8px 24px rgba(99,102,241,0.35)' : 'inset 0 2px 4px rgba(0,0,0,0.05)',
+            color: tasks.length > 0 ? '#ffffff' : 'rgba(var(--fg),0.45)',
+            border: tasks.length > 0 ? '1px solid transparent' : '1px solid rgba(var(--fg),0.18)',
+            cursor: tasks.length > 0 ? 'pointer' : 'not-allowed',
           }}
         >
           <Zap size={16} />

@@ -103,11 +103,11 @@ export default function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-xs sm:text-sm mt-1.5 sm:mt-2 font-light tracking-wide px-2"
-        style={{ color: 'rgba(var(--fg),0.5)' }}
+        className="text-xs sm:text-sm mt-4 sm:mt-5 font-light tracking-wide px-2 leading-relaxed"
+        style={{ color: 'rgba(var(--fg),0.7)' }}
       >
         แบ่งงานกลุ่มในมหาลัย{' '}
-        <span style={{ color: 'rgba(var(--fg),0.85)' }}>อย่างยุติธรรม</span>
+        <span style={{ color: 'rgba(var(--fg),0.9)' }}>อย่างยุติธรรม</span>
       </motion.p>
     </div>
   );

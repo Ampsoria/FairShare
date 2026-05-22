@@ -46,7 +46,7 @@ export default function WorkspaceSetup() {
           <button
             onClick={() => setStep('list')}
             className="flex items-center gap-1 transition text-sm"
-            style={{ color: 'rgba(var(--fg),0.5)' }}
+            style={{ color: 'rgba(var(--fg),0.65)' }}
           >
             <ArrowLeft size={16} />
             โปรเจกต์ทั้งหมด
@@ -94,7 +94,7 @@ export default function WorkspaceSetup() {
               <h2 className="text-lg font-bold" style={{ color: 'rgba(var(--fg),0.95)' }}>
                 สร้างกลุ่มทำงาน
               </h2>
-              <p className="text-sm mt-0.5 font-light" style={{ color: 'rgba(var(--fg),0.5)' }}>
+              <p className="text-sm mt-1 font-light" style={{ color: 'rgba(var(--fg),0.7)' }}>
                 ตั้งชื่อกลุ่มและเพิ่มเพื่อน
               </p>
             </div>
@@ -244,8 +244,8 @@ export default function WorkspaceSetup() {
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="text-xs font-light pl-1"
-                style={{ color: 'rgba(var(--fg),0.4)' }}
+                className="text-xs font-light pl-1 mt-1"
+                style={{ color: 'rgba(var(--fg),0.6)' }}
               >
                 ต้องการอย่างน้อย 2 คน
               </motion.p>
@@ -264,13 +264,16 @@ export default function WorkspaceSetup() {
             disabled={!canContinue}
             whileHover={canContinue ? { y: -2, boxShadow: '0 12px 32px rgba(99,102,241,0.5)' } : {}}
             whileTap={canContinue ? { scale: 0.98 } : {}}
-            className="w-full flex items-center justify-center gap-2 px-4 py-4 text-white rounded-2xl font-semibold disabled:opacity-30 disabled:cursor-not-allowed transition text-sm relative overflow-hidden"
-            style={{
-              background: canContinue
-                ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef)'
-                : 'rgba(var(--fg),0.08)',
-              boxShadow: canContinue ? '0 8px 24px rgba(99,102,241,0.4)' : 'none',
-            }}
+            className="w-full flex items-center justify-center gap-2 px-4 py-4 rounded-2xl font-semibold transition text-sm relative overflow-hidden"
+                style={{
+                  background: canContinue
+                    ? 'linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef)'
+                    : 'rgba(var(--fg),0.06)',
+                  boxShadow: canContinue ? '0 8px 24px rgba(99,102,241,0.4)' : 'inset 0 2px 4px rgba(0,0,0,0.05)',
+                  color: canContinue ? '#ffffff' : 'rgba(var(--fg),0.45)',
+                  border: canContinue ? '1px solid transparent' : '1px solid rgba(var(--fg),0.18)',
+                  cursor: canContinue ? 'pointer' : 'not-allowed',
+                }}
           >
             ถัดไป — เพิ่มงาน
             <ArrowRight size={16} />
