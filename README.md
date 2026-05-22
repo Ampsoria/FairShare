@@ -3,7 +3,7 @@
 **FairShare** is a modern, offline-first web application designed to help university students and teams divide group tasks fairly and efficiently. Forget the hassle of manual delegation—FairShare uses a smart algorithm to balance the workload based on task effort scores, ensuring everyone contributes equally. 🎓💼
 
 <div align="center">
-  <img src="public/favicon.svg" alt="FairShare Logo" width="120" />
+  
   <br/>
   <br/>
   <a href="https://ampsoria.github.io/FairShare/" target="_blank">
